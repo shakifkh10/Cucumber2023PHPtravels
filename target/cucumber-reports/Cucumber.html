@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cucumber</title>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<style>
+.cucumber-react h1, .cucumber-react h2, .cucumber-react h3 {
+  padding: 0;
+  margin-top: 0.3em;
+  margin-bottom: 0;
+  display: inline-block;
+}
+.cucumber-react a {
+  color: inherit;
+}
+.cucumber-react ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+.cucumber-react section {
+  margin-bottom: 1em;
+}
+.cucumber-react .status-passed {
+  color: #2CB14A;
+}
+.cucumber-react .status-skipped {
+  color: #00A0CC;
+}
+.cucumber-react .status-pending {
+  color: #FFAD33;
+}
+.cucumber-react .status-undefined {
+  color: #FFAD33;
+}
+.cucumber-react .status-ambiguous {
+  color: #F4EBFD;
+}
+.cucumber-react .status-failed {
+  color: #BB0000;
+}
+.cucumber-react .status-unknown {
+  color: #B6BECB;
+}
+.cucumber-react .data-table {
+  border-collapse: collapse;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.cucumber-react .data-table th {
+  border: 1px solid #4B5662;
+  padding: 0.3em;
+}
+.cucumber-react .data-table td {
+  border: 1px solid #4B5662;
+  padding: 0.3em;
+}
+.cucumber-react .data-table td__status {
+  padding: 0.5em 3px 3px 3px;
+}
+.cucumber-react .data-table td__step {
+  flex-grow: 1;
+}
+.cucumber-react .examples-table {
+  border-collapse: collapse;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.cucumber-react .examples-table th {
+  padding: 0.3em;
+}
+.cucumber-react .examples-table th + th {
+  border: 1px solid #4B5662;
+}
+.cucumber-react .examples-table td {
+  padding: 0.3em;
+}
+.cucumber-react .examples-table td + td {
+  border: 1px solid #4B5662;
+}
+.cucumber-react .examples-table td + td__status {
+  padding: 0.5em 3px 3px 3px;
+}
+.cucumber-react .examples-table td + td__step {
+  flex-grow: 1;
+}
+.cucumber-react .gherkin-document-list {
+  font: 14px "Open Sans", sans-serif;
+  color: #161C24;
+  background: #fff;
+  overflow-x: hidden;
+}
+.cucumber-react .indent {
+  margin-left: 1em;
+}
+.cucumber-react .keyword {
+  font-weight: bold;
+}
+.cucumber-react .step {
+  padding: 0.1em;
+}
+.cucumber-react .step-text {
+  font-weight: normal;
+}
+.cucumber-react .step-param {
+  font-weight: normal;
+}
+.cucumber-react .step-container {
+  display: flex;
+}
+.cucumber-react .step-container__step {
+  flex-grow: 1;
+}
+.cucumber-react .text_status_icon_container {
+  padding-top: 0.35em;
+  padding-right: 0.5em;
+}
+.cucumber-react .error-message {
+  padding: 0.5em;
+  margin: 0;
+  overflow: scroll;
+}
+.cucumber-react .tag-list {
+  padding: 0;
+  margin-bottom: 0;
+}
+.cucumber-react .tag {
+  display: inline;
+  list-style-type: none;
+  padding: 4px 8px 4px 8px;
+  margin-right: 6px;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+}
+.cucumber-react .attachment {
+  background-color: #ebebeb;
+  padding: 0.5em;
+}
+.cucumber-react .attachment .attachment-icon {
+  margin-right: 0.5em;
+}
+.cucumber-react .attachment-image {
+  margin-top: 1em;
+}
+.accordion {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+}
+
+.accordion__item + .accordion__item {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.accordion__button {
+    background-color: #f4f4f4;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+}
+
+.accordion__button:hover {
+    background-color: #ddd;
+}
+
+.accordion__button:before {
+    display: inline-block;
+    content: '';
+    height: 10px;
+    width: 10px;
+    margin-right: 12px;
+    border-bottom: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    transform: rotate(-45deg);
+}
+
+.accordion__button[aria-expanded='true']::before,
+.accordion__button[aria-selected='true']::before {
+    transform: rotate(45deg);
+}
+
+.accordion__panel {
+    padding: 20px;
+    animation: fadein 0.35s ease-in;
+}
+
+	</style>
+</head>
+<body>
+<div id="content">
+</div>
+<script>
+window.CUCUMBER_MESSAGES = [{"meta":{"protocolVersion":"12.1.1","implementation":{"name":"cucumber-jvm","version":"6.1.1"},"runtime":{"name":"Oracle Corporation","version":"1.8.0"},"os":{"name":"Windows 8.1"},"cpu":{"name":"x86"}}},{"testRunStarted":{"timestamp":{"seconds":"1689523634","nanos":558000000}}},{"source":{"uri":"file:///C:/Automation%20Testing/Workspace/PHPTravelsCucumber2023/src/main/java/feature/TestCase1.feature","data":"Feature: TestCase1 for PHPTravels\n\n \n  Scenario: Order Mobile\n  \tGiven Opening the browser\n    And Enter username\n    And Enter password\n    When Click login\n    Then Click Services\n    Then Click Mobile\n    Then Click Order\n","mediaType":"text/x.cucumber.gherkin+plain"}},{"gherkinDocument":{"uri":"file:///C:/Automation%20Testing/Workspace/PHPTravelsCucumber2023/src/main/java/feature/TestCase1.feature","feature":{"location":{"line":1,"column":1},"language":"en","keyword":"Feature","name":"TestCase1 for PHPTravels","children":[{"scenario":{"location":{"line":4,"column":3},"keyword":"Scenario","name":"Order Mobile","steps":[{"location":{"line":5,"column":4},"keyword":"Given ","text":"Opening the browser","id":"ea02aae2-3bc3-44f6-b8c7-e777c24a999c"},{"location":{"line":6,"column":5},"keyword":"And ","text":"Enter username","id":"05126e52-a1f4-481c-b32b-865b0afb73d6"},{"location":{"line":7,"column":5},"keyword":"And ","text":"Enter password","id":"5faba485-7134-4933-87a1-3e42c1c2c61a"},{"location":{"line":8,"column":5},"keyword":"When ","text":"Click login","id":"ea967cc3-a124-4ab8-8202-ac3b2f524ae8"},{"location":{"line":9,"column":5},"keyword":"Then ","text":"Click Services","id":"d9254aaa-e7b6-4e21-a477-19a41ca5341f"},{"location":{"line":10,"column":5},"keyword":"Then ","text":"Click Mobile","id":"64882024-0b03-4932-8333-87bea12a1c64"},{"location":{"line":11,"column":5},"keyword":"Then ","text":"Click Order","id":"8b5599f1-07ad-4ed2-aa95-7f1f5ce11f08"}],"id":"7db5c7ea-528b-44bf-b6d5-caaa9792a60f"}}]}}},{"pickle":{"id":"9e35b452-7635-4057-845f-070459f94285","uri":"file:///C:/Automation%20Testing/Workspace/PHPTravelsCucumber2023/src/main/java/feature/TestCase1.feature","name":"Order Mobile","language":"en","steps":[{"text":"Opening the browser","id":"7f216500-ae83-439e-9c62-5d1cd53c04a8","astNodeIds":["ea02aae2-3bc3-44f6-b8c7-e777c24a999c"]},{"text":"Enter username","id":"6b1c6c36-c6ec-4248-8a6d-f3c680b4ffc5","astNodeIds":["05126e52-a1f4-481c-b32b-865b0afb73d6"]},{"text":"Enter password","id":"9e72fe79-8ce7-426f-832b-76a2d645f392","astNodeIds":["5faba485-7134-4933-87a1-3e42c1c2c61a"]},{"text":"Click login","id":"ad26e262-cc33-4cac-bfc4-b7551a75ca3e","astNodeIds":["ea967cc3-a124-4ab8-8202-ac3b2f524ae8"]},{"text":"Click Services","id":"dbed9043-8322-4987-b56b-1ffdd5226227","astNodeIds":["d9254aaa-e7b6-4e21-a477-19a41ca5341f"]},{"text":"Click Mobile","id":"634017d9-822e-46f8-96d5-077093fc22ce","astNodeIds":["64882024-0b03-4932-8333-87bea12a1c64"]},{"text":"Click Order","id":"861f2203-6e69-4186-899c-1535f730e996","astNodeIds":["8b5599f1-07ad-4ed2-aa95-7f1f5ce11f08"]}],"astNodeIds":["7db5c7ea-528b-44bf-b6d5-caaa9792a60f"]}},{"stepDefinition":{"id":"eb6e81ce-2f53-4b25-9de0-d2916f70b9e5","pattern":{"source":"Click Order"}}},{"stepDefinition":{"id":"6a2fb23f-ae2c-494c-8c68-4a1c6db736c1","pattern":{"source":"Opening the browser"}}},{"stepDefinition":{"id":"93784a68-e3b7-4602-a0f8-38f0856c1bfc","pattern":{"source":"Click login"}}},{"stepDefinition":{"id":"cfa83029-f617-4745-aa78-e073617f18eb","pattern":{"source":"Enter password"}}},{"stepDefinition":{"id":"ca8d9d1c-d66a-4e70-ac3e-b5ec197ce8bc","pattern":{"source":"Enter username"}}},{"stepDefinition":{"id":"1f66c3b1-edf8-49b6-8591-726d233a20ac","pattern":{"source":"Click Mobile"}}},{"stepDefinition":{"id":"4d47e057-2d4e-4b96-9bff-1ac85623fae4","pattern":{"source":"Click Services"}}},{"testCase":{"id":"0d9b982b-a15e-4c83-9126-e3c26f10417a","pickleId":"9e35b452-7635-4057-845f-070459f94285","testSteps":[{"id":"2b1a30d4-cf37-47e7-99ab-c56f199962d1","pickleStepId":"7f216500-ae83-439e-9c62-5d1cd53c04a8","stepDefinitionIds":["2b1a30d4-cf37-47e7-99ab-c56f199962d1"],"stepMatchArgumentsLists":[{}]},{"id":"3db56451-f9bd-4b19-a315-a9c07dc19465","pickleStepId":"6b1c6c36-c6ec-4248-8a6d-f3c680b4ffc5","stepDefinitionIds":["3db56451-f9bd-4b19-a315-a9c07dc19465"],"stepMatchArgumentsLists":[{}]},{"id":"cbd6db4f-a9de-4575-8793-85f1b25bbdcf","pickleStepId":"9e72fe79-8
